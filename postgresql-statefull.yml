@@ -37,6 +37,7 @@ spec:
       labels:
         app: postgres # tiene que coincidir con .spec.selector.matchLabels
     spec:
+      serviceAccountName: vault
       containers:
       - name: postgres
         image: postgres:12.2
